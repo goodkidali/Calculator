@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+html{
+    height: 100%;
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+}
+body{
+    align-items: center;
+    background: linear-gradient(320deg, rgb(177, 10, 255), rgb(242, 98, 255), rgb(255, 31, 199));
+    display: flex;
+    height: inherit;
+    justify-content: center;
+}
+.container{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255,255,255,0.30);
+    border: 1px solid rgba(255,255,255,0.1);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+.calc-screen{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255,255,255,0.75);
+    border: 1px solid rgba(255,255,255,0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+    color: #232323;
+    font-size: 40px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+.button, .button-clear, .button-zero{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255,255,255,0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-size: 24px;
+    height: 65px;
+}
+.button:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255,255,255,0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+    color: #ffffff;
+    background: rgb(226, 16, 226);
+}
+.button:last-child:hover{
+    background-color: inherit;
+    color: inherit;
+}
+.button:hover, .button-clear:hover, .button-zero:hover{
+    background-color: inherit;
+}
+.button:active, .button:last-child:active, .button-clear:active, .button-zero:active{
+    background-color: rgb(242, 98, 255);
+}
+.button-clear{
+    flex-basis: 47%;
+}
+.button-zero{
+    flex-basis: 73%;
+}
+.credit{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+}
+.no-link{
+    text-decoration: none;
+    color: inherit;
+    font-size: 10.72px;
+}
